@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Portfolio - contact</title>
+        <meta charset="UTF8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./css/shared.css">
+        <link rel="stylesheet" href="./css/contact.css">
+    </head>
+
+    <body>
+        <!--HEADER SECTION-->
+        <header class="main-header">
+            <div class="container">
+                <div class="main-header__brand">
+                    <a href="index.html">
+                        <img src="images/logo.jpg" alt="logo">
+                    </a>
+                </div>
+                <nav class="main-navigation">
+                    <ul class="main-navigation__items">
+                        <li class="main-navigation__item active">
+                            <a href="index.html">Main</a>
+                        </li>
+                        <li class="main-navigation__item">
+                            <a href="#">About me</a>
+                        </li>
+                        <li class="main-navigation__item">
+                            <a href="#">Services</a>
+                        </li>
+                        <li class="main-navigation__item">
+                            <a href="#">Clients</a>
+                        </li>
+                        <li class="main-navigation__item">
+                            <a href="#">Portfolio</a>
+                        </li>
+                        <li class="main-navigation__item">
+                            <a href="#">Blog</a>
+                        </li>
+                        <li class="main-navigation__item">
+                            <a href="#">Partners</a>
+                        </li>
+                        <li class="main-navigation__item">
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- /HEADER SECTION -->
+
+        <!--CONTACT SECTION-->
+
+        <div class="container">
+            <section class="contact">
+                <div class="section-title to_uppercase">
+                    Contact me
+                </div>
+                <form action="server.php" method="get">
+                    <textarea rows="20" placeholder="Write your message here..." name="message"></textarea>
+                    <div class="half-row input__firstname">
+                        <input type="text" placeholder="First name" name="firstname">
+                    </div>
+                    <div class="half-row input__email">
+                        <input type="email" placeholder="sample@example.com" name="email">
+                    </div>
+                    <input type="text" placeholder="Subject" name="subject">
+                    <button class="button" type="submit">Send message</button>
+                </form>
+            </section>
+        </div>
+
+        <!-- /CONTACT SECTION-->
+
+        <!--FOOTER-->
+        <footer>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Main</a>
+                    </li>
+                    <li>
+                        <a href="#">About me</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Clients</a>
+                    </li>
+                    <li>
+                        <a href="#">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">Partners</a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+        <!-- /FOOTER-->
+    </body>
+</html>
