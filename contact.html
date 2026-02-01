@@ -20,7 +20,7 @@
                 </div>
                 <nav class="main-navigation">
                     <ul class="main-navigation__items">
-                        <li class="main-navigation__item active">
+                        <li class="main-navigation__item">
                             <a href="index.html">Main</a>
                         </li>
                         <li class="main-navigation__item">
@@ -41,7 +41,7 @@
                         <li class="main-navigation__item">
                             <a href="#">Partners</a>
                         </li>
-                        <li class="main-navigation__item">
+                        <li class="main-navigation__item active">
                             <a href="contact.html">Contact</a>
                         </li>
                     </ul>
@@ -59,11 +59,13 @@
                 </div>
                 <form action="server.php" method="get">
                     <textarea rows="20" placeholder="Write your message here..." name="message"></textarea>
-                    <div class="half-row input__firstname">
-                        <input type="text" placeholder="First name" name="firstname">
-                    </div>
-                    <div class="half-row input__email">
-                        <input type="email" placeholder="sample@example.com" name="email">
+                    <div class="half-flex">
+                        <div class="input__firstname">
+                            <input type="text" placeholder="First name" name="firstname">
+                        </div>
+                        <div class="input__email">
+                            <input type="email" placeholder="sample@example.com" name="email">
+                        </div>
                     </div>
                     <input type="text" placeholder="Subject" name="subject">
                     <button class="button" type="submit">Send message</button>
@@ -74,33 +76,68 @@
         <!-- /CONTACT SECTION-->
 
         <!--FOOTER-->
-        <footer>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">Main</a>
+        <div class="footer-container">
+            <footer class="footer" id="footer">
+                <div class="footer-brand">
+                    <img class="footer-brand-logo" src="images/logo.jpg" alt="Logo">
+                </div>
+                <nav class="footer-nav">
+                    <ul class="footer-nav-items">
+                        <li class="footer-nav-item">
+                            <a href="#">Main</a>
+                        </li>
+                        <li class="footer-nav-item">
+                            <a href="#">About me</a>
+                        </li>
+                        <li class="footer-nav-item">
+                            <a href="#">Services</a>
+                        </li>
+                        <li class="footer-nav-item">
+                            <a href="#">Clients</a>
+                        </li>
+                        <li class="footer-nav-item">
+                            <a href="#">Portfolio</a>
+                        </li>
+                        <li class="footer-nav-item">
+                            <a href="#">Blog</a>
+                        </li>
+                        <li class="footer-nav-item">
+                            <a href="#">Partners</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="footer-socials">
+                    <li class="footer-social">
+                        <a href="#">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
                     </li>
-                    <li>
-                        <a href="#">About me</a>
+                    <li class="footer-social">
+                        <a href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
                     </li>
-                    <li>
-                        <a href="#">Services</a>
+                    <li class="footer-social">
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
                     </li>
-                    <li>
-                        <a href="#">Clients</a>
+                    <li class="footer-social">
+                        <a href="#">
+                            <i class="fa-brands fa-telegram"></i>
+                        </a>
                     </li>
-                    <li>
-                        <a href="#">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#">Blog</a>
-                    </li>
-                    <li>
-                        <a href="#">Partners</a>
+                    <li class="footer-social">
+                        <a href="#">
+                            <i class="fa-brands fa-pinterest"></i>
+                        </a>
                     </li>
                 </ul>
-            </nav>
-        </footer>
+                <p footer-text>
+                    © 2026, Orange MonkE. All rights reserved.
+                </p>
+            </footer>
+        </div>
         <!-- /FOOTER-->
     </body>
 </html>

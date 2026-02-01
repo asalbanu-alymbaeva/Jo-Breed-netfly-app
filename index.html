@@ -4,6 +4,7 @@
     <head>
         <title>Portfolio</title>
         <meta charset="UTF8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="./css/shared.css">
         <link rel="stylesheet" href="css/main.css">
@@ -21,25 +22,25 @@
                 <nav class="main-navigation">
                     <ul class="main-navigation__items">
                         <li class="main-navigation__item active">
-                            <a href="#">Main</a>
+                            <a href="#main-section">Main</a>
                         </li>
                         <li class="main-navigation__item">
-                            <a href="#">About me</a>
+                            <a href="#about-me">About me</a>
                         </li>
                         <li class="main-navigation__item">
-                            <a href="#">Services</a>
+                            <a href="#services">Services</a>
                         </li>
                         <li class="main-navigation__item">
-                            <a href="#">Clients</a>
+                            <a href="#clients">Clients</a>
                         </li>
                         <li class="main-navigation__item">
-                            <a href="#">Portfolio</a>
+                            <a href="#portfolio">Portfolio</a>
                         </li>
                         <li class="main-navigation__item">
-                            <a href="#">Blog</a>
+                            <a href="#blog">Blog</a>
                         </li>
                         <li class="main-navigation__item">
-                            <a href="#">Partners</a>
+                            <a href="#partners">Partners</a>
                         </li>
                         <li class="main-navigation__item">
                             <a href="contact.html">Contact</a>
@@ -116,11 +117,11 @@
                         teaching programming and working with HTML, CSS, and JavaScript, and I 
                         enjoy turning designs into functional web pages. I am continuously improving
                         my skills through real projects and modern frontend practices.</p>
-                </div>
 
-                <button type="button" class="button to_uppercase">
-                    Download CV
-                </button>
+                        <button type="button" class="button to_uppercase">
+                            Download CV
+                        </button>
+                </div>  
             </section>
 
             <div class="clearfix"></div>
@@ -184,13 +185,14 @@
                                 The frontend work was clean, responsive, and delivered on time. 
                                 Communication was clear, and the final website matched our 
                                 expectations perfectly.</p>
-                        </div>
-                        <div class="client-item__rate">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star disabled"></i>
+
+                                <div class="client-item__rate">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star disabled"></i>
+                                </div>
                         </div>
                     </div>
                 </div>
@@ -351,33 +353,68 @@
         <!-- /PARTNERS-->
 
         <!--FOOTER-->
-        <footer>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">Main</a>
+        <div class="footer-container">
+            <footer class="footer" id="footer">
+                <div class="footer-brand">
+                    <img class="footer-brand-logo" src="images/logo.jpg" alt="Logo">
+                </div>
+                <nav class="footer-nav">
+                    <ul class="footer-nav-items">
+                        <li class="footer-nav-item">
+                            <a href="#main-section">Main</a>
+                        </li>
+                        <li class="footer-nav-item">
+                            <a href="#about-me">About me</a>
+                        </li>
+                        <li class="footer-nav-item">
+                            <a href="#services">Services</a>
+                        </li>
+                        <li class="footer-nav-item">
+                            <a href="#clients">Clients</a>
+                        </li>
+                        <li class="footer-nav-item">
+                            <a href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="footer-nav-item">
+                            <a href="#blog">Blog</a>
+                        </li>
+                        <li class="footer-nav-item">
+                            <a href="#partners">Partners</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="footer-socials">
+                    <li class="footer-social">
+                        <a href="#">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
                     </li>
-                    <li>
-                        <a href="#">About me</a>
+                    <li class="footer-social">
+                        <a href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
                     </li>
-                    <li>
-                        <a href="#">Services</a>
+                    <li class="footer-social">
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
                     </li>
-                    <li>
-                        <a href="#">Clients</a>
+                    <li class="footer-social">
+                        <a href="#">
+                            <i class="fa-brands fa-telegram"></i>
+                        </a>
                     </li>
-                    <li>
-                        <a href="#">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#">Blog</a>
-                    </li>
-                    <li>
-                        <a href="#">Partners</a>
+                    <li class="footer-social">
+                        <a href="#">
+                            <i class="fa-brands fa-pinterest"></i>
+                        </a>
                     </li>
                 </ul>
-            </nav>
-        </footer>
+                <p footer-text>
+                    © 2026, Orange MonkE. All rights reserved.
+                </p>
+            </footer>
+        </div>
         <!-- /FOOTER-->
     </body>
 </html>
